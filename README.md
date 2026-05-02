@@ -184,8 +184,43 @@ APIs were tested using **Postman** with a collection containing:
 * Source code (GitHub repository)
 * Working API endpoints
 * Postman collection (JSON file)
+## 📬 Postman Collection
 
+You can import the Postman collection from:
+
+[Download Collection]
+https://github.com/Takshsri/Educase_NodeJs/blob/main/postman/School%20API.postman_collection.json
 ---
+
+
+## 🌍 Live Deployment
+
+The API is deployed on Render and connected to Aiven MySQL cloud database.
+
+🔗 Base URL:
+https://educase-nodejs.onrender.com
+
+### Example Endpoints:
+
+- Add School:
+POST https://educase-nodejs.onrender.com/api/schools/add
+
+- List Schools:
+GET https://educase-nodejs.onrender.com/api/schools/listSchools?latitude=17.385&longitude=78.4867
+
+
+
+## ⚡ Performance Optimization
+
+- Added index on latitude and longitude for faster querying:
+
+```sql
+CREATE INDEX idx_location ON schools (latitude, longitude);
+
+```
+
+
+
 
 ## 🎯 Conclusion
 
