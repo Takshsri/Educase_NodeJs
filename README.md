@@ -61,7 +61,9 @@ project/
 ### 1. Clone the repository
 
 ```
-git clone <your-repo-link>
+//this is github repo
+git clone https://github.com/Takshsri/Educase_NodeJs
+
 cd project
 ```
 
